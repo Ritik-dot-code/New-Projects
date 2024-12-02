@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e3e6f3;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header-list-nav ul{
+    display: flex;
+    
+}
+.header-list-nav ul li{
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.header-list-nav ul a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+.header-list-nav ul a:hover,
+.header-list-nav ul a.active{
+    color: #088178;
+    content: "";
+}
+
+.header-logo img{
+    height: 70px;
+    width: 80px;
+}
+.header-list-icon a{
+    color: #1a1a1a;
+    padding-left: 20px;
+    transition: 0.3s ease;
+
+}
+.header-list-icon a:hover{
+    color: #088178;
+
+}
+
+.header-list-nav ul a:hover::after,
+.header-list-nav ul a.active::after{
+    width: 30%;
+    height: 2px;
+    content: "";
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+
+#emain{
+    display: flex;
+    background-image: url(./emain2.jpg);
+    /* background-attachment: fixed ; */
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+#emain h3{
+    font-size: 40px;
+    color: #e3e6f399;
+    font-weight: 100;
+    cursor: grab;
+}
+#emain h2{
+    font-size: 55px;
+    color: #212121;
+    cursor: grab;
+}
+#emain h1{
+    font-size: 80px;
+    color: #088178;
+    font-weight: 700;
+    cursor: grab;
+}
+#emain p{
+    font-size: 20px;
+    font-weight: 650;
+    cursor: grab;
+}
+#emain button{
+    background-image: url(./btnbgc.jpg);
+    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 20px;
+    color: #088178;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.features .f-box{
+    width: 220px;
+    height: 22hm0px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce6d0;
+    margin: 50px 0;
+    transition: box-shadow 0.3s;
+}
+.features .f-box img{
+    width: 150px;
+    height: 150px;
+}
+.features .f-box h6{
+    font-weight: 900;
+    padding: 15px 20px;
+    background-color: #cce6d0;
+    border: 1px solod #cce6d0;
+    margin-bottom: 10px;
+}
+.features .f-box h6:hover{
+    color: #fff;
+    background-color: #088178;
+}
+
+.features .f-box:hover{
+    box-shadow: 35px 40px 50px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+.text{
+    text-align: center;
+}
+.text h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+.text p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.collection .t-shirt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 60px ;
+}
+
+.t-shirt .t-shirts{
+    width: 200px;
+    border: 1px solid #ebebeb;
+    padding: 13px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    transition: box-shadow 0.2s;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+.t-shirt .t-shirts:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.t-shirt .t-shirts h3{
+    padding-top: 9px;
+    color: #088178;
+    padding-left: 5px;
+}
+.t-shirt .t-shirts h4{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.t-shirt .t-shirts img{
+    width: 100%;
+    border-radius: 25px;
+    height: 150px;
+    display: flex;
+}
+.t-shirt .t-shirts .stars{
+    color: rgb(255, 185, 9);
+    display: flex;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.t-shirt .t-shirts a{
+    color: #088178;
+    padding: 15px;
+    position: absolute;
+    border-radius: 50px;
+    right: 10px;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.off .some-off{
+    background-image: url(./bgcoff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    background-position: center;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.off .some-off h4{
+    margin-top: 15px;
+    padding-top: 120px;
+    font-size: 40px;
+    color: #088178;
+    font-weight: 900;
+}
+.off .some-off h4:hover{
+    cursor: pointer;
+}
+.off .some-off h2{
+    margin: 10px;
+    font-size: 70px;
+}
+.off .some-off h2:hover{
+    color: #678937;
+    cursor: pointer;
+}
+.off .some-off button{
+    border: 0;
+    background-color: #313131;
+    color: #cce6d0;
+    padding: 15px;
+    font-size: 30px;
+    border: 2px solid #fff;
+    border-radius: 0.5rem;
+}
+.off .some-off button:hover{
+    background-color: #cce6d0;
+    color: #313131;
+    cursor: pointer;
+}
+
+.new-product .new-arrival .new{
+    position: relative;
+}
+.new-product .new-arrival .text h1{
+    font-size: 70px;
+    font-weight: 800;
+}
+.new-product .new-arrival .text p{
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.new-arrival .t-shirt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 60px ;
+}
+
+
+
+
+.banners .big-banners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banners .big-banners .big-banners-1{
+    background-image: url(./rit.1.jpg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    min-width: 500px;
+    min-height: 300px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.banners .big-banners .big-banners-1 h3{
+    color: #fff;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.banners .big-banners .big-banners-1 h2{
+    color: darksalmon;
+    /* padding-top: 15px; */
+    font-size: 40px;
+    font-weight: 800;
+}
+.banners .big-banners .big-banners-1 p{
+    color: #313;
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: 900;
+}
+.banners .big-banners .big-banners-1 button{
+    border: none;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #313131;
+    border-radius: 0.5rem;
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    color: black;
+}
+.banners .big-banners .big-banners-1 button:hover{
+    background-color: pink;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+.banners .big-banners .big-banners-2{
+    background-image: url(./rit2.jpeg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    min-width: 500px;
+    min-height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.banners .big-banners .big-banners-2 h3{
+    color: #fff;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.banners .big-banners .big-banners-2 h2{
+    color: black;
+    /* padding-top: 15px; */
+    font-size: 40px;
+    font-weight: 800;
+}
+.banners .big-banners .big-banners-2 p{
+    color: #fff;
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: 900;
+}
+.banners .big-banners .big-banners-2 button{
+    border: none;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #313131;
+    border-radius: 0.5rem;
+    height: 50px;
+    width: 150px;
+    background-color: #f1ffb9;
+    color: black;
+}
+.banners .big-banners .big-banners-2 button:hover{
+    background-color: black;
+    color: #f1ffb9;
+    cursor: pointer;
+}
+
+
+
+
+.banners .small-banners{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.banners .small-banners .small-banners1{
+    background-image: url(./sessonalsale.jpg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    /* background-position: center; */
+    min-width: 450px;
+    min-height: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banners .small-banners .small-banners1 h2{
+    font-size: 35px;
+    margin-top: 50px;
+    padding-left: 195px;
+    color: #088178;
+    font-weight: 700;
+}
+.banners .small-banners .small-banners1 h2:hover{
+    color: black;
+    cursor: pointer;
+}
+.banners .small-banners .small-banners1 h5{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 220px;
+    color: #088178;
+    font-weight: 800;
+}
+.banners .small-banners .small-banners1 h5:hover{
+    color: black;
+    cursor: pointer;
+}
+.banners .small-banners .small-banners2{
+    background-image: url(./ecommercefootwear.jpeg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    min-width: 450px;
+    min-height: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banners .small-banners .small-banners2 h2{
+    font-size: 25px;
+    font-weight: 900;
+    color: #088178;
+    cursor: pointer;
+}
+.banners .small-banners .small-banners2 h5{
+    font-size: 15px;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+}
+.banners .small-banners .small-banners3{
+    background-image: url(./ecommercetshirt.jpeg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    min-width: 450px;
+    min-height: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banners .small-banners .small-banners3 h2{
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.banners .small-banners .small-banners3 h5{
+    font-size: 15px;
+    font-weight: 700;
+    color: #e3e6f399;
+    cursor: pointer;
+}
+.banners .small-banners .small-banners3 h5:hover{
+    color: black;
+    font-weight: 999;
+}
+
+/* .footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 75px;
+    background-color: #ececec;
+}
+.footer p, .footer a{
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+.footer a:hover{
+    color: #088178;
+}
+.footer .about a{
+    display: block;
+    padding: 8px 0;
+}
+.footer .myaccount a{
+    display: block;
+    padding: 8px 0;
+}
+.footer .download img{
+    border: 1px solid #08817969;
+    border-radius: 7px;
+} */
+
+footer{
+    display: flex;
+    background-color: #ececec;
+    text-decoration: none;
+}
+footer .logopart{
+    padding: 8px 0;
+}
+footer .logopart p{
+    color: #a4a4a4;
+}
+footer .logopart .socials a{
+    padding: 2px 2px 15px 10px;
+}
+
+footer .about{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+footer .about a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 0 0 0;
+    color: #a4a4a4;
+}
+footer .about a:hover{
+    color: #088178;
+    cursor: pointer;
+}
+footer .myaccount{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+footer .myaccount a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 0 0 0;
+    color: #a4a4a4;
+}
+footer .myaccount a:hover{
+    color: #088178;
+    cursor: pointer;
+}
+footer .install{
+    padding-top: 50px;
+    padding-left: 70px;
+}
+footer .install p{
+    color: #a4a4a4;
+    padding: 10px 0 20px 0;
+}
+footer .install p:hover{
+    color: #088178;
+    cursor: pointer;
+}
+footer .install img{
+    height: 80px;
+    width: 500px;
+    border: 1px solid #a4a4a4;
+    border-radius: 10px;
+}
